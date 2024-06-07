@@ -1,7 +1,26 @@
 {
-  "name": "hello-yahtzee",
-  "module": "index.ts",
+  "name": "@trinitytime/hello-yahtzee",
+  "version": "1.0.0",
+  "description": "yahtzee for node.js",
+  "keywords": [
+    "yahtzee"
+  ],
+  "license":"MIT",
+  "module": "src/index.ts",
   "type": "module",
+  "bin": {
+    "yahtzee": "src/index.ts"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trinitytime/hello-yahtzee.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/inquirer": "^9.0.7",
