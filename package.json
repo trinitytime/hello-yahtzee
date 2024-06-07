@@ -21,6 +21,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {},
   "devDependencies": {
     "@types/bun": "latest",
     "@types/inquirer": "^9.0.7",
