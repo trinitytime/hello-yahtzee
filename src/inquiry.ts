@@ -35,7 +35,7 @@ export async function askScore() {
     multiple: false,
     options: [
       { name: 'Aces', value: 1 },
-      { name: 'Tows', value: 2 },
+      { name: 'Twos', value: 2 },
       { name: 'Threes', value: 3 },
       { name: 'Fours', value: 4 },
       { name: 'Fives', value: 5 },

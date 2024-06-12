@@ -50,7 +50,7 @@ function isLargeStraight(){
 function getScore(type: string): number {
   switch(type) {
     case 'Aces': return getSum(1)
-    case 'Tows': return getSum(2)
+    case 'Twos': return getSum(2)
     case 'Threes': return getSum(3)
     case 'Fours': return getSum(4)
     case 'Fives': return getSum(5)
@@ -68,7 +68,7 @@ function getScore(type: string): number {
 
 function calcScore() {
   state.score[1].temp = getScore('Aces')
-  state.score[2].temp = getScore('Tows')
+  state.score[2].temp = getScore('Twos')
   state.score[3].temp = getScore('Threes')
   state.score[4].temp = getScore('Fours')
   state.score[5].temp = getScore('Fives')
@@ -90,7 +90,7 @@ export function printScoreBoard() {
   const scoreName = [
     'Bonus',
     'Aces',
-    'Tows',
+    'Twos',
     'Threes',
     'Fours',
     'Fives',
@@ -137,7 +137,7 @@ export function print() {
   calcScore()
 
   console.clear()
-  console.log(`Welcom ${state.player}`)
+  console.log(`Welcome ${state.player}`)
   console.log(`Round : ${state.round}`)
   console.log(`Game Score : ${state.gameScore}`)
   printScoreBoard()
